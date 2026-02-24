@@ -30,7 +30,7 @@ function App() {
       <br />
 
         {data.map((obj)=>{
-          return <li key={obj.id} className="px-5  bg-gray-600 w-fit rounded py-2 list-none">
+          return <li key={obj.id} className="px-5 mt-1  bg-gray-600 max-w-fit rounded py-2 list-none">
             {obj.task}
           </li>
         })}
