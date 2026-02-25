@@ -8,6 +8,7 @@ function Create() {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -18,6 +19,8 @@ function Create() {
     console.log("Data Fethched : ", data);
 
     dispatch(addTask(data))
+
+    reset()
 
   };
 
